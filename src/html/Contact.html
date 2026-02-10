@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Web Solutions</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<header>
+    <h1>Sydney Web Solutions and Services</h1>
+    <nav>
+        <a id="home" href="#home">Home</a>
+        <a id="services" href="#services">Services</a>
+        <a id="projects" href="#projects">Projects</a>
+        <a id="about" href="#about">About Us</a>
+        <a id="contact" href="#contact">Contact</a>
+    </nav>
+</header>
+<article>
+    <article>
+        <section>
+
+
+                <!-- QUOTE FORM -->
+                <div id="quoteForm" class="form-container">
+                    <h3>Website Quote Request</h3>
+                    <form>
+                        <label>Full Name</label>
+                        <input type="text" required>
+
+                        <label>Email</label>
+                        <input type="email" required>
+
+                        <label>Company Name</label>
+                        <input type="text">
+
+                        <label>Type of Website</label>
+                        <select required>
+                            <option value="">Select...</option>
+                            <option>Business Website</option>
+                            <option>E-commerce</option>
+                            <option>Portfolio</option>
+                            <option>Web Application</option>
+                        </select>
+
+                        <label>Estimated Budget</label>
+                        <select>
+                            <option>Under $500</option>
+                            <option>$500 - $2000</option>
+                            <option>$2000+</option>
+                        </select>
+
+                        <label>Project Description</label>
+                        <textarea rows="4" placeholder="Describe your project..."></textarea>
+
+                        <button type="submit" class="submit-btn">Submit Request</button>
+                    </form>
+                </div>
+
+                <!-- BOOKING FORM -->
+                <div id="bookingForm" class="form-container">
+                    <h3>Book a Consultation</h3>
+                    <form>
+                        <label>Full Name</label>
+                        <input type="text" required>
+
+                        <label>Email</label>
+                        <input type="email" required>
+
+                        <label>Phone Number</label>
+                        <input type="tel">
+
+                        <label>Preferred Date</label>
+                        <input type="date" required>
+
+                        <label>Preferred Time</label>
+                        <input type="time" required>
+
+                        <label>Consultation Type</label>
+                        <select required>
+                            <option value="">Select...</option>
+                            <option>Zoom Meeting</option>
+                            <option>Google Meet</option>
+                            <option>Phone Call</option>
+                            <option>In-Person Meeting</option>
+                        </select>
+
+                        <label>Project Overview</label>
+                        <textarea rows="4" placeholder="Briefly describe your project..."></textarea>
+
+                        <button type="submit" class="submit-btn">Confirm Booking</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+    </article>
+
+</article>
+
+
+
+
+
+
+
+
+<main>
+    <article>
+
+        <aside class="sidebar-left">
+            <a href="#" class="sidebar-btn" onclick="showForm('quote')">Get Quote</a>
+            <a href="#" class="sidebar-btn" onclick="showForm('booking')">Book Consultation</a>
+            <p>Call us: (02) 1234 5678</p>
+            <p>Email: contact@sydneywebsolutions.com</p>
+            <h4>Top Services</h4>
+            <ul>
+                <li>Bespoke Website Development</li>
+                <li>UI/UX Design</li>
+                <li>Backend Integration</li>
+            </ul>
+        </aside>
+        </section>
+
+
+
+
+    </article>
+</main>
+
+<footer>
+    <p>Contact us today to discuss your project</p>
+    <p>Email: contact@sydneywebsolutions.com | Phone: (02) 1234 5678</p>
+    <p>© 2023 Sydney Web Solutions. All rights reserved.</p>
+</footer>
+
+<script id="default-template" type="text/handlebars-template">
+    <p>Click on a menu item.</p>
+</script>
+<script src="contact.js"></script>
+</body>
+</html>
