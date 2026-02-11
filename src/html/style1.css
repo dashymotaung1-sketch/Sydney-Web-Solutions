@@ -29,6 +29,10 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
 
 /* =========================
    NAVIGATION
@@ -399,6 +403,63 @@ footer p {
     article {
         padding: 1.5rem;
     }
+    .service-card {
+        background: white;
+        padding: 1.2rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .service-card h3 {
+        margin-bottom: 1rem;
+        color: #007bff;
+    }
+
+    .service-features {
+        list-style: none;
+        padding: 0;
+    }
+
+    .service-features li {
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .service-features li:last-child {
+        border-bottom: none;
+    }
+
+    .service-features li::before {
+        content: "✔ ";
+        color: #28a745;
+        font-weight: bold;
+    }
+    .auto-grid {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        height: 350px;
+        margin: 2rem auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .auto-grid img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .auto-grid img.active {
+        opacity: 1;
+    }
+
+
 
     h1 {
         font-size: 2rem;

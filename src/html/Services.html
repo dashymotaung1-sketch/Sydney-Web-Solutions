@@ -2,9 +2,236 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Web Solutions</title>
+    <link rel="stylesheet" href="style1.css">
+
+
+
+    <style>
+
+
+          body {
+              margin: 0;
+              font-family: Arial, sans-serif;
+              background: #f2f4f8;
+          }
+
+        /* Layout */
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .main-article {
+            flex: 3;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            min-height: 600px;
+        }
+
+        /* Sidebar */
+        .testimonial-sidebar {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 4px solid #007bff;
+        }
+
+        /* Service Card */
+        .service-card {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .service-card h3 {
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-features li {
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .service-features li:last-child {
+            border-bottom: none;
+        }
+
+        .service-features li::before {
+            content: "✔ ";
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        /* AUTO IMAGE SLIDER */
+        .auto-grid {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .auto-grid img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .auto-grid img.active {
+            opacity: 1;
+        }
+          .additional-services {
+              margin-top: 2rem;
+          }
+
+          .additional-services h3 {
+              margin-bottom: 1rem;
+              color: #007bff;
+          }
+
+          .services-list {
+              list-style: none;
+              padding: 0;
+          }
+
+          .services-list li {
+              background: #f8f9fa;
+              padding: 0.8rem 1rem;
+              margin-bottom: 0.6rem;
+              border-radius: 6px;
+              border-left: 4px solid #007bff;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+          }
+
+          .services-list li:hover {
+              transform: translateX(5px);
+              box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+          }
+
+          .services-list li::before {
+              content: "✔ ";
+              color: #28a745;
+              font-weight: bold;
+          }
+
+
+          /* Responsive */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+        }
+
+
+    </style>
+
 </head>
 <body>
+<header>
+    <h1>Sydney Web Solutions and Services</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<
+<div class="content-wrapper">
+
+    <article class="main-article">
+        <section>
+            <div class="auto-grid">
+                <img src="../img/images13.jpeg" class="active">
+                <img src="../img/images19.jpeg">
+                <img src="../img/images18.jpeg">
+                <img src="../img/images20.jpg">
+                <img src="../img/Untitled.png"/>
+            </div>
+
+
+
+        </section>
+        <section class="additional-services">
+            <h3>Additional Services We Also Provide</h3>
+
+            <ul class="services-list">
+                <li>Website Maintenance & Support</li>
+                <li>SEO Optimization</li>
+                <li>Domain & Hosting Setup</li>
+                <li>Website Speed Optimization</li>
+                <li>API Integration</li>
+                <li>Database Design & Management</li>
+                <li>Networking</li>
+                <li> computer hardware  and Software</li>
+                <li>Content Management Systems (WordPress / Custom CMS)</li>
+            </ul>
+        </section>
+    </article>
+
+
+    <aside class="testimonial-sidebar">
+
+
+        <section class="service-card">
+            <h3>Frontend & UI/UX Development</h3>
+
+            <ul class="service-features">
+                <li>Responsive design (mobile-friendly)</li>
+                <li>React / Vue applications</li>
+                <li>Single Page Applications (SPA)</li>
+                <li>Website redesign</li>
+                <li>UI improvements</li>
+                <li>Website performance optimization</li>
+            </ul>
+        </section>
+
+    </aside>
+</div>
+
+
+<footer>
+    <p>Contact us today to discuss your project</p>
+    <p>Email: contact@sydneywebsolutions.com | Phone: (02) 1234 5678</p>
+    <p>
+        <img src="../img/images8.png" height="20" width="20"/> 0767075598
+        <img src="../img/images9.png" height="20" width="20"/>Facebook
+        <img src="../img/images10.jpeg" height="20" width="20"/>Instagram
+        <img src="../img/images11.jpeg" height="20" width="20"/>Tiktok
+    </p>
+    <p>© 2026 Sydney Web Solutions. All rights reserved.</p>
+</footer>
+
+<script id="default-template" type="text/handlebars-template">
+    <p>Click on a menu item.</p>
+</script>
+<script src="service.js"></script>
+</body>
 
 </body>
 </html>
