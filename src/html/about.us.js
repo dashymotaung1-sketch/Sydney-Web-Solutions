@@ -25,3 +25,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // Change every 4 seconds
     setInterval(autoRotateTestimonials, 4000);
 });
+// This adds the 'active' class to the clicked link
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // stop default link behavior
+
+            const targetPage = this.getAttribute("href");
+
+            // Navigate to the selected page
+            window.location.href = targetPage;
+        });
+    });
+
+});

@@ -26,3 +26,30 @@ bookingFormElement.addEventListener('submit', function(e) {
     alert("Thank you! Your booking has been confirmed. You will receive an SMS confirmation shortly.");
     bookingFormElement.reset(); // clear the form
 });
+// This adds the 'active' class to the clicked link
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // stop default link behavior
+
+            const targetPage = this.getAttribute("href");
+
+            // Navigate to the selected page
+            window.location.href = targetPage;
+        });
+    });
+
+});
+
